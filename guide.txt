@@ -1,0 +1,72 @@
+Background
+The Frontend is where the user views and interacts with the web application, usually from a browser on a laptop or a mobile. E.g. www.zomato.com or www.twitter.com
+The Backend is where the intelligence of the application comes in. It stores and manipulates data and generates the content that will be sent to the Frontend, to be displayed. These two components talk to each other for requests and responses.
+A Full Stack Web developer is one who can build both the Frontend (a.k.a Client) and the Backend (a.k.a Server) of a web application. The interaction between the Frontend and Backend (e.g. REST API) and data storage (e.g. MongoDB or MySQL), if needed, also needs to be built.
+
+HTML (Frontend) - HTML is the standard language used to create webpage content.
+CSS (Frontend) - CSS describes how HTML elements should be displayed on the page.
+JavaScript (Frontend) - JavaScript is a programming language which can do data manipulation and update the HTML and CSS of a page.
+React (Frontend) - React is a JavaScript library for building user interfaces or UI components.
+Gatsby (Frontend) - Gatsby is a React based framework to generate static websites which are fast.
+Netlify (Frontend) - Netlify is a service that we’ll use to deploy our Frontend publicly.
+NodeJS (Backend) - Node.js is a JavaScript runtime environment which can be used to run your Backend server. Note that it can also be used to run your Frontend as well, but here we’ll use it to run the Backend only.
+Express (Backend) - Express is a Node.js web application framework that provides a robust set of features for web and mobile applications.
+Npm - npm is a package manager for Node.js packages, or modules
+Heroku (Backend) - Heroku is a service we’ll use to deploy our Backend publicly
+REST API (Interface between Frontend and Backend) - It is a standard request/response format that allows two components or applications to talk to each other.
+Github - It is a platform where you can host your projects and code. It provides version control and lets you collaborate with others on projects.
+
+setup ssh key using https://docs.google.com/document/d/1LkKTJ4rxSV3cc4enn5kijCq1kKAlSMdb6eBstKtZdQ8/edit#
+
+git clone git@gitlab.crio.do:COHORT_ME_QPROFILE_ENROLL_1610706419360/rishusingh022-ME_QPROFILE.git
+# Go into the cloned repo directory.
+cd ~/workspace/rishusingh022-ME_QPROFILE/
+# Setup the remote repository and pull the code stubs for this ME.
+git remote add ME_QPROFILE_MODULE_CREATE_PROFILE_STUB git@gitlab.crio.do:ME_QPROFILE_STUBS/ME_QPROFILE_MODULE_CREATE_PROFILE_STUB.git
+git pull ME_QPROFILE_MODULE_CREATE_PROFILE_STUB master --allow-unrelated-histories --no-edit
+
+Frontend
+You will see many directories here. All of the source code is contained under the src folder and the tests under the tests folder
+src/assets - contains all static assets (icons, illustrations, thumbnails) required for your project
+src/components - contains all the React components (building blocks) for your profile website
+src/data - includes a file config.js that dynamically picks up data to show on the webpage
+src/hooks and src/providers - responsible for providing light and dark themes to your profile
+src/pages - lists all the pages in your profile. In this project, there are only two pages - the index page containing your profile data and the 404 page for any other non existent route
+Other key files include
+package.json - this file contains the dependencies for the project
+
+npm install
+npm start to run your React profile application. This starts a development server running your profile on port 8081.
+npm start
+
+
+https://javascriptforwp.com/what-is-gatsby-js-and-why-use-it/
+https://www.gatsbyjs.com/docs/
+https://javascriptforwp.com/what-is-gatsby-js-and-why-use-it/
+https://www.w3schools.com/whatis/whatis_npm.asp
+https://docs.npmjs.com/cli-documentation/cli/
+
+This is called Hot reloading provided by Gatsby, the React based framework that we’re using to build the profile and run the server.
+
+https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/
+https://create-react-app.dev/docs/adding-custom-environment-variables/
+https://www.freecodecamp.org/news/what-are-environment-variables-and-how-can-i-use-them-with-gatsby-and-netlify/
+
+https://docs.netlify.com/#get-started
+https://codebots.com/app-development/what-are-environments-in-software-development-a-guide-to-the-development-beta-and-production-environments
+
+
+banckend
+In this module, you will
+Add a Backend to the profile to store contacts filled in the form
+Use Curl to test the Backend APIs
+Integrate Frontend and Backend
+Use Chrome Developer tools to check the request/response correctness
+Deploy the Backend publicly using heroku
+
+/https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/
+https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
+https://curl.haxx.se/docs/httpscripting.html
+https://www.guru99.com/postman-tutorial.html
+https://stackabuse.com/managing-environment-variables-in-node-js-with-dotenv/
+https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm
